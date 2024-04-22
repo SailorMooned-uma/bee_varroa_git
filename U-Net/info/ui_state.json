@@ -1,0 +1,343 @@
+{
+    "activeStep": 7,
+    "restartFrom": null,
+    "collapsed1": false,
+    "useCache": true,
+    "randomSplit": {
+        "count": {
+            "total": 2192,
+            "train": 1753,
+            "val": 439
+        },
+        "percent": {
+            "total": 100,
+            "train": 80,
+            "val": 20
+        },
+        "shareImagesBetweenSplits": false,
+        "sliderDisabled": false
+    },
+    "splitMethod": "random",
+    "trainTagName": null,
+    "valTagName": null,
+    "trainDatasets": [],
+    "valDatasets": [],
+    "untaggedImages": "train",
+    "splitInProgress": false,
+    "trainImagesCount": 1753,
+    "valImagesCount": 439,
+    "collapsed2": false,
+    "disabled2": false,
+    "selectedClasses": [
+        "varroa"
+    ],
+    "classes": [
+        true
+    ],
+    "collapsed3": false,
+    "disabled3": false,
+    "useAugs": true,
+    "augsType": "template",
+    "augsTemplateName": "Medium",
+    "customAugsPath": "",
+    "collapsed4": false,
+    "disabled4": false,
+    "pretrainedModel": "UNet",
+    "selectedModel": {
+        "ConvNeXt": "upernet_convnext_tiny_fp16_512x512_160k_ade20k",
+        "BEiT": "upernet_beit-base_8x2_640x640_160k_ade20k",
+        "KNet": "knet_s3_fcn_r50-d8_8x2_512x512_adamw_80k_ade20k",
+        "Segformer": "segformer_mit-b0_512x512_160k_ade20k",
+        "Segmenter": "segmenter_vit-t_mask_8x1_512x512_160k_ade20k",
+        "Twins": "twins_pcpvt-s_fpn_fpnhead_8x4_512x512_80k_ade20k",
+        "Swin Transformer": "upernet_swin_tiny_patch4_window7_512x512_160k_ade20k_pretrain_224x224_1K",
+        "DPT": "dpt_vit-b16_512x512_160k_ade20k",
+        "SETR": "setr_naive_512x512_160k_b16_ade20k",
+        "ViT": "upernet_vit-b16_mln_512x512_80k_ade20k",
+        "STDC": "stdc1_512x1024_80k_cityscapes",
+        "BiSeNetV2": "bisenetv2_fcn_4x4_1024x1024_160k_cityscapes",
+        "CGNet": "cgnet_680x680_60k_cityscapes",
+        "PointRend": "pointrend_r50_512x1024_80k_cityscapes",
+        "DNLNet": "dnl_r50-d8_512x1024_40k_cityscapes",
+        "OCRNet": "ocrnet_hr18s_512x1024_40k_cityscapes",
+        "ResNeSt": "fcn_s101-d8_512x1024_80k_cityscapes",
+        "ISANet": "isanet_r50-d8_512x1024_40k_cityscapes",
+        "FastSCNN": "fast_scnn_lr0.12_8x4_160k_cityscapes",
+        "FastFCN": "fastfcn_r50-d32_jpu_aspp_512x1024_80k_cityscapes",
+        "GCNet": "gcnet_r50-d8_512x1024_40k_cityscapes",
+        "ANN": "ann_r50-d8_512x1024_40k_cityscapes",
+        "DMNet": "dmnet_r50-d8_512x1024_40k_cityscapes",
+        "CCNet": "ccnet_r50-d8_512x1024_40k_cityscapes",
+        "EMANet": "emanet_r50-d8_512x1024_80k_cityscapes",
+        "APCNet": "apcnet_r50-d8_512x1024_40k_cityscapes",
+        "DANet": "danet_r50-d8_512x1024_40k_cityscapes",
+        "SemanticFPN": "fpn_r50_512x1024_80k_cityscapes",
+        "HRNet": "fcn_hr18s_512x1024_40k_cityscapes",
+        "MobileNetV3": "lraspp_m-v3-d8_512x1024_320k_cityscapes",
+        "ENCNet": "encnet_r50-d8_512x1024_40k_cityscapes",
+        "NonLocalNet": "nonlocal_r50-d8_512x1024_40k_cityscapes",
+        "ICNet": "icnet_r18-d8_832x832_80k_cityscapes",
+        "UPerNet": "upernet_r50_512x1024_40k_cityscapes",
+        "DeepLabV3+": "deeplabv3plus_r50-d8_512x1024_40k_cityscapes",
+        "PSANet": "psanet_r50-d8_512x1024_40k_cityscapes",
+        "MobileNetV2": "fcn_m-v2-d8_512x1024_80k_cityscapes",
+        "BiSeNetV1": "bisenetv1_r18-d32_4x4_1024x1024_160k_cityscapes",
+        "DeepLabV3": "deeplabv3_r50-d8_512x1024_40k_cityscapes",
+        "PSPNet": "pspnet_r50-d8_512x1024_40k_cityscapes",
+        "ERFNet": "erfnet_fcn_4x4_512x1024_160k_cityscapes",
+        "UNet": "pspnet_unet_s5-d16_ce-1.0-dice-3.0_256x256_40k_hrf",
+        "FCN": "fcn_r50-d8_512x1024_40k_cityscapes"
+    },
+    "useAuxiliaryHead": true,
+    "weightsInitialization": "pretrained",
+    "collapsed5": false,
+    "disabled5": false,
+    "weightsPath": "",
+    "loadingModel": false,
+    "optimizer": "SGD",
+    "lr": 0.01,
+    "weightDecay": 0.0005,
+    "decodeHeadLoss": "CrossEntropyLoss",
+    "auxiliaryHeadLoss": "CrossEntropyLoss",
+    "decodeHeadLossWeight": 1,
+    "auxiliaryHeadLossWeight": 0.4,
+    "lrPolicy": "Poly",
+    "useWarmup": false,
+    "warmup": "constant",
+    "warmupIters": 0,
+    "warmupRatio": 0.1,
+    "schedulerByEpochs": false,
+    "minLREnabled": true,
+    "minLR": 0.0001,
+    "minLRRatio": null,
+    "power": 0.9,
+    "momentum": 0.9,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "input_size": {
+        "value": {
+            "width": 256,
+            "height": 256,
+            "proportional": false
+        },
+        "options": {
+            "proportions": {
+                "width": 100,
+                "height": 100
+            },
+            "min": 64
+        }
+    },
+    "batchSizePerGPU": 4,
+    "workersPerGPU": 4,
+    "epochs": 1,
+    "gpusId": 0,
+    "valInterval": 1,
+    "logConfigInterval": 2,
+    "checkpointInterval": 1,
+    "maxKeepCkptsEnabled": true,
+    "maxKeepCkpts": 2,
+    "saveLast": true,
+    "saveBest": true,
+    "nesterov": false,
+    "amsgrad": false,
+    "momentumDecay": 0.004,
+    "gradClipEnabled": false,
+    "maxNorm": 1,
+    "useClassWeights": false,
+    "classWeights": "",
+    "decodeSmoothLoss": 1,
+    "decodeExpLoss": 2,
+    "auxiliarySmoothLoss": 1,
+    "auxiliaryExpLoss": 2,
+    "decodeAlpha": 0.5,
+    "decodeGamma": 2,
+    "auxiliaryAlpha": 0.5,
+    "auxiliaryGamma": 2,
+    "evalMetrics": [
+        "mIoU",
+        "mDice"
+    ],
+    "lr_step": "",
+    "gamma": 0.1,
+    "startPercent": 0.75,
+    "periods": "",
+    "restartWeights": "",
+    "highestLRRatio": 10,
+    "lowestLRRatio": 0.001,
+    "cyclicTimes": 10,
+    "stepRatioUp": 0.4,
+    "annealStrategy": "cos",
+    "cyclicGamma": 1,
+    "totalStepsEnabled": false,
+    "totalSteps": null,
+    "maxLR": "",
+    "pctStart": 0.3,
+    "divFactor": 25,
+    "finalDivFactor": 10000,
+    "threePhase": false,
+    "warmupByEpoch": false,
+    "currentTab": "general",
+    "collapsedWarmup": true,
+    "collapsed6": false,
+    "disabled6": false,
+    "done6": false,
+    "isValidation": false,
+    "smoothing": 0.6,
+    "chartLR": {
+        "options": {
+            "title": "LR",
+            "smoothingWeight": 0,
+            "groupKey": null,
+            "showLegend": true,
+            "decimalsInFloat": 6,
+            "yaxisInterval": null,
+            "xaxisDecimalsInFloat": 2
+        },
+        "series": [
+            {
+                "name": "lr",
+                "data": []
+            }
+        ]
+    },
+    "chartTrainLoss": {
+        "options": {
+            "title": "Train Loss",
+            "smoothingWeight": 0.6,
+            "groupKey": null,
+            "showLegend": true,
+            "decimalsInFloat": 6,
+            "yaxisInterval": null,
+            "xaxisDecimalsInFloat": 2
+        },
+        "series": [
+            {
+                "name": "loss",
+                "data": []
+            }
+        ]
+    },
+    "mean_charts": {
+        "chartVal_mIoU": {
+            "options": {
+                "title": "Val mIoU",
+                "smoothingWeight": 0.6,
+                "groupKey": null,
+                "showLegend": true,
+                "decimalsInFloat": 2,
+                "yaxisInterval": null,
+                "xaxisDecimalsInFloat": null
+            },
+            "series": [
+                {
+                    "name": "mIoU",
+                    "data": []
+                }
+            ],
+            "metric": "mIoU"
+        },
+        "chartVal_mDice": {
+            "options": {
+                "title": "Val mDice",
+                "smoothingWeight": 0.6,
+                "groupKey": null,
+                "showLegend": true,
+                "decimalsInFloat": 2,
+                "yaxisInterval": null,
+                "xaxisDecimalsInFloat": null
+            },
+            "series": [
+                {
+                    "name": "mDice",
+                    "data": []
+                }
+            ],
+            "metric": "mDice"
+        }
+    },
+    "class_charts": {
+        "chartVal_IoU": {
+            "options": {
+                "title": "Val IoU",
+                "smoothingWeight": 0.6,
+                "groupKey": null,
+                "showLegend": true,
+                "decimalsInFloat": 2,
+                "yaxisInterval": null,
+                "xaxisDecimalsInFloat": null
+            },
+            "series": [],
+            "metric": "mIoU"
+        },
+        "chartVal_Dice": {
+            "options": {
+                "title": "Val Dice",
+                "smoothingWeight": 0.6,
+                "groupKey": null,
+                "showLegend": true,
+                "decimalsInFloat": 2,
+                "yaxisInterval": null,
+                "xaxisDecimalsInFloat": null
+            },
+            "series": [],
+            "metric": "mDice"
+        }
+    },
+    "chartTime": {
+        "options": {
+            "title": "Time",
+            "smoothingWeight": 0,
+            "groupKey": null,
+            "showLegend": true,
+            "decimalsInFloat": 2,
+            "yaxisInterval": null,
+            "xaxisDecimalsInFloat": 2
+        },
+        "series": [
+            {
+                "name": "time",
+                "data": []
+            }
+        ]
+    },
+    "chartDataTime": {
+        "options": {
+            "title": "Data Time",
+            "smoothingWeight": 0,
+            "groupKey": null,
+            "showLegend": true,
+            "decimalsInFloat": 2,
+            "yaxisInterval": null,
+            "xaxisDecimalsInFloat": 2
+        },
+        "series": [
+            {
+                "name": "data_time",
+                "data": []
+            }
+        ]
+    },
+    "chartMemory": {
+        "options": {
+            "title": "Memory",
+            "smoothingWeight": 0,
+            "groupKey": null,
+            "showLegend": true,
+            "decimalsInFloat": 2,
+            "yaxisInterval": null,
+            "xaxisDecimalsInFloat": 2
+        },
+        "series": [
+            {
+                "name": "memory",
+                "data": []
+            }
+        ]
+    },
+    "collapsed7": false,
+    "disabled7": false,
+    "done7": false,
+    "started": true,
+    "preparingData": false
+}
